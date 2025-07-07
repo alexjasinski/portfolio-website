@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body id="top">
+
+
+	<header>
+		<div class="personal-info">
+			<h1>Jonny Bravo</h1>
+			<h5><i class="fa fa-envelope"></i> jbravo@distopian.org</h3>
+				<h5><i class="fa fa-phone"></i> +4858977392</h4>
+		</div>
+		<nav>
+			<a href="#about">About me</a>
+			<a href="#skills">Skills</a>
+			<a href="#projects">Projects</a>
+			<a href="#recommendations">Recommendations</a>
+		</nav>
+	</header>
+
+	<section id="about">
+		<div class="profile-picture">
+			<img id="profile-img" src="/portfolio-website/src/profile.png" alt="Jonny Bravo's Profile Picture">
+		</div>
+		<div class="profile-info">
+			<h2>Hi, I'm Jonny Bravo! <i class="fa fa-rocket"></i></h2>
+			<p>I am a full stack developer with 2 years of experience in both application and presentation layers. I
+				have worked on applications and microservices deployed on IBM Cloud. I am an avid user of IBM Watson
+				Services and have worked on Watson Assistant, NLU, Sentiment analyzer to name a few.</p>
+		</div>
+	</section>
+	<main>
+
+		<section id="skills">
+			<h2>My Skills</h2>
+			<ul class="skills-list">
+				<div id="skills-box">
+					<li>
+						<p><i class="fa-brands fa-html5"></i> HTML</p>
+						<p id="skills-exp">2 years experience</p>
+					</li>
+				</div>
+				<div id="skills-box">
+					<li>
+						<p><i class="fa-brands fa-js"></i> JavaScript
+						</p>
+						<p>
+							<span id="skills-exp">4 years experience</span>
+						</p>
+					</li>
+				</div>
+				<div id="skills-box">
+					<li>
+						<p>
+							<i class="fa-brands fa-java"></i> Java
+						</p>
+						<p>
+							<span id="skills-exp">1 years experience</span>
+						</p>
+					</li>
+				</div>
+				<div id="skills-box">
+					<li>
+						<p>
+							<i class="fa-brands fa-react"></i> React
+						</p>
+						<p>
+							<span id="skills-exp">4 years experience</span>
+						</p>
+					</li>
+				</div>
+				<div id="skills-box">
+					<li>
+						<p>
+							<i class="fa-brands fa-node-js"></i> Node.js
+						</p>
+						<p>
+							<span id="skills-exp">2.5 years experience</span>
+						</p>
+					</li>
+				</div>
+				<div id="skills-box">
+					<li>
+						<p>
+							<i class="fa-brands fa-css3-alt"></i> CSS
+						</p>
+						<p>
+							<span id="skills-exp">3.5 years experience</span>
+						</p>
+					</li>
+				</div>
+			</ul>
+	</main>
+	<section id="projects">
+		<div>
+			<h2>Projects</h2>
+			<ul>
+				<li>
+					<p class="project-title">
+
+						<a href="project1.html">Chatbot</a>
+					</p>
+					<p id="skills-exp">Developed a secure website with chatbox for an automobile client using HTML, CSS,
+						JavaScript and IBM Watson Assistant.</p>
+				</li>
+				<li>
+					<p class="project-title">
+						<a href="project2.html">Sentiment Analyzer</a>
+				</li>
+				</p>
+				<p id="skills-exp">Developed and deployed a sentiment analyzer for the box reviews section of an
+					eCommerce platform using IBM NLU.</p>
+				<li>
+
+					<p class="project-title">
+						<a href="project3.html">Fashion Website</a>
+				</li>
+				</p>
+				<p id="skills-exp">Created a styled multi-paged website for a new player in the fashion industry and
+					integrated it with a shopping cart using stripe for payment gateway.</p>
+			</ul>
+		</div>
+	</section>
+	<section id="recommendations">
+		<h2>Recommendations</h2>
+		<ul class="recommendations-list">
+			<div id="recommendations-box">
+				<li id="recommendations-exp">"Jonny is a highly skilled developer who consistently delivers quality
+					work." - Client A</li>
+			</div>
+			<div id="recommendations-box">
+
+				<li id="recommendations-exp">"I was impressed by Jonny's ability to quickly understand our needs and
+					provide effective solutions." -
+					Client B</li>
+
+			</div>
+			<div id="recommendations-box">
+				<li id="recommendations-exp">"Jonny's expertise in IBM Watson Services was invaluable to our project." -
+					Client C</li>
+			</div>
+		</ul>
+		<div id="recommendation-form-container">
+			<form id="recommendation-form">
+				<h3>Leave a Recommendation</h3>
+				<input type="text" id="name" name="name" placeholder="Name (Optional)">
+				<textarea id="recommendation" name="recommendation" placeholder="Message" required></textarea>
+				<div id="recommendation-form-buttons">
+					<button type="submit">Submit</button>
+				</div>
+			</form>
+
+		</div>
+	</section>
+	<div id="popup" class="hidden">
+		<p>Thank you for your recommendation!</p>
+		<button id="close-popup">Close</button>
+	</div>
+		<div href="#top" id="home-arrow" type="button" onclick="window.location.href='#top'">
+			<i class="fas fa-arrow-up"></i>
+		</div>
+	<script src="./script.js"></script>
+</body>
+
+</html>
